@@ -1,0 +1,29 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/echo/.well-known/agent-card.json",
+      "displayName": "Echo Agent",
+      "description": "A minimal echo agent that returns your message. Use it to verify basic A2A connectivity.",
+      "mediaType": "application/a2a-agent-card+json",
+      "url": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/echo/.well-known/agent-card.json",
+      "tags": ["a2a", "echo", "test", "public"]
+    },
+    {
+      "identifier": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec/.well-known/agent-card.json",
+      "displayName": "Spec Agent",
+      "description": "Multi-skill A2A v1.0 compliance agent exercising all interaction patterns: message-only, task-lifecycle, task-failure, task-cancel, multi-turn, streaming, long-running, and data-types.",
+      "mediaType": "application/a2a-agent-card+json",
+      "url": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec/.well-known/agent-card.json",
+      "tags": ["a2a", "spec", "v1.0", "test", "streaming", "public"]
+    },
+    {
+      "identifier": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec03/.well-known/agent-card.json",
+      "displayName": "Spec Agent (v0.3 compat)",
+      "description": "Same as Spec Agent but serves a v0.3-format agent card. Tests SDK backward compatibility with protocolVersion 0.3.0.",
+      "mediaType": "application/a2a-agent-card+json",
+      "url": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec03/.well-known/agent-card.json",
+      "tags": ["a2a", "spec", "v0.3", "backward-compat", "test", "public"]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darrel Miller — AI Agent Catalog</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+    h1 { font-size: 1.6rem; }
+    .subtitle { color: #555; margin-top: -0.5rem; }
+    .catalog-link { font-size: 0.9rem; background: #f4f4f4; padding: 0.4rem 0.8rem; border-radius: 4px; font-family: monospace; display: inline-block; margin: 1rem 0; }
+    .agent { border: 1px solid #ddd; border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; }
+    .agent h2 { margin: 0 0 0.3rem; font-size: 1.1rem; }
+    .agent p { margin: 0.3rem 0; color: #444; font-size: 0.92rem; }
+    .tags { margin-top: 0.5rem; }
+    .tag { display: inline-block; background: #e8f0fe; color: #1a56db; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; margin-right: 0.3rem; }
+    .endpoint { font-family: monospace; font-size: 0.82rem; color: #555; word-break: break-all; }
+    footer { margin-top: 3rem; font-size: 0.8rem; color: #888; }
+  </style>
+</head>
+<body>
+  <h1>AI Agent Catalog</h1>
+  <p class="subtitle">Public A2A agents published by <a href="https://github.com/darrelmiller">Darrel Miller</a></p>
+
+  <p>Machine-readable catalog:</p>
+  <span class="catalog-link">https://darrelmiller.github.io/.well-known/ai-catalog.json</span>
+
+  <div class="agent">
+    <h2>Echo Agent</h2>
+    <p>A minimal echo agent that returns your message. Use it to verify basic A2A connectivity.</p>
+    <div class="tags"><span class="tag">a2a</span><span class="tag">echo</span><span class="tag">test</span><span class="tag">public</span></div>
+    <p class="endpoint">Endpoint: https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/echo</p>
+    <p class="endpoint">Agent Card: <a href="https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/echo/.well-known/agent-card.json">agent-card.json</a></p>
+  </div>
+
+  <div class="agent">
+    <h2>Spec Agent</h2>
+    <p>Multi-skill A2A v1.0 compliance agent exercising all interaction patterns: message-only, task-lifecycle, task-failure, task-cancel, multi-turn, streaming, long-running, and data-types.</p>
+    <div class="tags"><span class="tag">a2a</span><span class="tag">spec</span><span class="tag">v1.0</span><span class="tag">streaming</span><span class="tag">test</span><span class="tag">public</span></div>
+    <p class="endpoint">Endpoint: https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec</p>
+    <p class="endpoint">Agent Card: <a href="https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec/.well-known/agent-card.json">agent-card.json</a></p>
+  </div>
+
+  <div class="agent">
+    <h2>Spec Agent (v0.3 compat)</h2>
+    <p>Same as Spec Agent but serves a v0.3-format agent card. Tests SDK backward compatibility with protocolVersion 0.3.0.</p>
+    <div class="tags"><span class="tag">a2a</span><span class="tag">v0.3</span><span class="tag">backward-compat</span><span class="tag">test</span><span class="tag">public</span></div>
+    <p class="endpoint">Endpoint: https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec03</p>
+    <p class="endpoint">Agent Card: <a href="https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec03/.well-known/agent-card.json">agent-card.json</a></p>
+  </div>
+
+  <footer>
+    Discovery: paste <code>darrelmiller.github.io</code> into any A2A client that supports AI Catalog discovery.
+  </footer>
+</body>
+</html>
