@@ -24,6 +24,54 @@
       "type": "application/a2a-agent-card+json",
       "url": "https://agentbin.greensmoke-1163cb63.eastus.azurecontainerapps.io/spec03/.well-known/agent-card.json",
       "tags": ["a2a", "spec", "v0.3", "backward-compat", "test", "public"]
+    },
+    {
+      "identifier": "https://github.com/mnot/ietf-skill/tree/main/ietf-contributing",
+      "displayName": "ietf-contributing",
+      "description": "Norms for drafting IETF mailing-list messages, replies, GitHub issues and comments, and other contributions to the public record.",
+      "type": "application/agent-skills+md",
+      "url": "https://raw.githubusercontent.com/mnot/ietf-skill/main/ietf-contributing/SKILL.md",
+      "tags": ["skill", "ietf", "contributing", "public"],
+      "publisher": {
+        "identifier": "https://github.com/mnot",
+        "displayName": "mnot"
+      }
+    },
+    {
+      "identifier": "https://github.com/mnot/ietf-skill/tree/main/ietf-interpreting",
+      "displayName": "ietf-interpreting",
+      "description": "Guidance for interpreting IETF and IRTF consensus, participant positions, working-group decisions, and Internet-Draft and RFC status.",
+      "type": "application/agent-skills+md",
+      "url": "https://raw.githubusercontent.com/mnot/ietf-skill/main/ietf-interpreting/SKILL.md",
+      "tags": ["skill", "ietf", "irtf", "consensus", "public"],
+      "publisher": {
+        "identifier": "https://github.com/mnot",
+        "displayName": "mnot"
+      }
+    },
+    {
+      "identifier": "https://github.com/mnot/ietf-skill/tree/main/ietf-reviewing",
+      "displayName": "ietf-reviewing",
+      "description": "Guidance for reviewing Internet-Drafts and specifications, producing findings for a human reviewer rather than finished review text. Install the full upstream skill directory to include its bundled references.",
+      "type": "application/agent-skills+md",
+      "url": "https://raw.githubusercontent.com/mnot/ietf-skill/main/ietf-reviewing/SKILL.md",
+      "tags": ["skill", "ietf", "review", "internet-draft", "public"],
+      "publisher": {
+        "identifier": "https://github.com/mnot",
+        "displayName": "mnot"
+      }
+    },
+    {
+      "identifier": "https://github.com/mnot/ietf-skill/tree/main/ietf-http",
+      "displayName": "ietf-http",
+      "description": "Best practices for writing and reviewing IETF specifications that use or extend HTTP, including BCP 56 guidance. Install the full upstream skill directory to include its bundled references.",
+      "type": "application/agent-skills+md",
+      "url": "https://raw.githubusercontent.com/mnot/ietf-skill/main/ietf-http/SKILL.md",
+      "tags": ["skill", "ietf", "http", "specification", "public"],
+      "publisher": {
+        "identifier": "https://github.com/mnot",
+        "displayName": "mnot"
+      }
     }
   ]
 }
